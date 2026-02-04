@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvVaccine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Бешенство"/>
+
+    <TextView
+        android:id="@+id/tvDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сделано: 01.02.2026 • Следующая: 01.02.2027"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

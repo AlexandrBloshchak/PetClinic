@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:text="Барсик"/>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Кот • 3 года • порода"/>
+
+        <!-- Sterilization -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:text="Стерилизация/кастрация"/>
+
+        <TextView
+            android:id="@+id/tvSterilization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нет данных"/>
+
+        <Button
+            android:id="@+id/btnSetSterilization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отметить стерилизацию/кастрацию"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Vaccinations -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:text="Прививки"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvVaccinations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnAddVaccination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить прививку"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Visits -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:text="История посещений"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvVisits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnAddVisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить посещение"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

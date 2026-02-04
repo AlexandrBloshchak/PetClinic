@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+
+        <!-- Хозяин -->
+        <EditText
+            android:id="@+id/etOwnerFio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ФИО хозяина"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etOwnerAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Возраст хозяина"
+            android:inputType="number"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etOwnerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Телефон"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etOwnerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Почта"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Питомцы"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Количество питомцев"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spPetCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- сюда динамически добавляем блоки питомцев -->
+        <LinearLayout
+            android:id="@+id/containerPets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnDoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:layout_marginTop="18dp"/>
+    </LinearLayout>
+</ScrollView>

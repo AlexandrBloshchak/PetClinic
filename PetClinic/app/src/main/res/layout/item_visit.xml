@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvVisitTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="03.02.2026 • Доктор Иванов"/>
+
+    <TextView
+        android:id="@+id/tvDiagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Диагноз: Отит"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvTreatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лечение: капли 7 дней"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>
