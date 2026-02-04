@@ -1,1 +1,1 @@
-# PetClinic
+Документ с схемой базы дынных https://1drv.ms/w/c/f836c74cf6158d9f/IQBnFvjEMWLkRbNUkKSPl-3xAbp21rdPEbJ5V49Ot71UYGQ?e=YEBHvB
